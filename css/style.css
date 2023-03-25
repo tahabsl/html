@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 0, 157, 0.7)
+    ),
+    url('https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-attachment: fixed;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+.listClass,
+.listClass ~ li {
+  display: inline;
+  padding: 5px 10px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.resumeSection h2 {
+  color: red;
+}
+p {
+  text-align: justify;
+}
+video,
+iframe {
+  width: 400px;
+  height: 200px;
+}
+table {
+  width: 500px;
+}
+thead {
+  background-color: beige;
+}
+td {
+  text-align: center;
+}
+input {
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+}
+input::placeholder {
+  color: rgb(243, 1, 182);
+}
+button {
+  border: rgb(243, 1, 182) solid 1px;
+  background-color: rgb(243, 1, 182);
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+button:hover {
+  box-shadow: none;
+  border: rgb(243, 1, 182) solid 1px;
+  background-color: white;
+  color: rgb(243, 1, 182);
+}
