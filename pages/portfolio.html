@@ -24,7 +24,21 @@
     </header>
     <main>
       <section>
-        <h2>about section</h2>
+        <div class="waviy">
+          <span style="--i:1">A</span>
+          <span style="--i:2">B</span>
+          <span style="--i:3">O</span>
+          <span style="--i:4">U</span>
+          <span style="--i:5">T</span>
+          <span style="--i:7">S</span>
+          <span style="--i:8">E</span>
+          <span style="--i:9">C</span>
+          <span style="--i:10">T</span>
+          <span style="--i:11">I</span>
+          <span style="--i:12">O</span>
+          <span style="--i:13">N</span>
+        </div>
+        <blockquote>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure
           sint mollitia, aliquam deleniti quaerat corporis odio tempore! Cum
@@ -39,6 +53,7 @@
           blanditiis ad laborum nisi? Cupiditate rem hic aliquam sequi obcaecati
           accusantium mollitia natus amet? Voluptatibus magni .
         </p>
+      </blockquote>
       </section>
       <section>
         <h2>work section</h2>
@@ -54,9 +69,23 @@
         ></iframe>
       </section>
       <section class="resumeSection">
-        <h2>resume section</h2>
+        <div class="waviy">
+          <span style="--i:1">R</span>
+          <span style="--i:2">E</span>
+          <span style="--i:3">S</span>
+          <span style="--i:4">U</span>
+          <span style="--i:5">M</span>
+          <span style="--i:6">E</span>
+          <span style="--i:7">S</span>
+          <span style="--i:8">E</span>
+          <span style="--i:9">C</span>
+          <span style="--i:10">T</span>
+          <span style="--i:11">I</span>
+          <span style="--i:12">O</span>
+          <span style="--i:13">N</span>
+        </div>
 
-        <table id="table1" border="1" title="Resume">
+        <table id="table1" border="1" title="Resume" class="styled-table">
           <thead>
             <tr>
               <th>maysa</th>
@@ -83,36 +112,61 @@
           </tbody>
         </table>
       </section>
-      <h2>contact section</h2>
+      <div class="waviy">
+        <span style="--i:1">C</span>
+        <span style="--i:2">O</span>
+        <span style="--i:3">N</span>
+        <span style="--i:4">T</span>
+        <span style="--i:5">A</span>
+        <span style="--i:6">C</span>
+        <span style="--i:7">T</span>
+        <span style="--i:8">U</span>
+        <span style="--i:9">S</span>
+      </div>
       <form>
-        <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="enter your name" />
-        <br />
-        <label for="prenom">first Name:</label>
-        <input id="prenom" type="text" placeholder="enter your first name" />
-        <br />
-        <label for="you">You are:</label>
-        <select>
-          <option value="2">student</option>
-          <option value="3">instracteur</option>
-        </select>
-        <br />
-        <label for="number">Number:</label>
-        <input id="number" type="number" placeholder="enter your number" />
-        <br />
-        <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="enter your email" />
-        <br />
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="you-are">You Are:</label>
+          <select id="you-are" name="you-are" required>
+            <option value="">Select One</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="professional">Professional</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="number">Number:</label>
+          <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
         <label for="message">Message:</label>
         <textarea cols="20" rows="3" id="message" type="text"></textarea>
         <br />
+        </div>
+      
+      <div class="form-group">
         <label for="male">male</label>
         <input type="radio" name="gg" id="male" />
         <br />
+      </div>
+   
+    <div class="form-group">
         <label for="female">female</label>
 
         <input type="radio" name="gg" id="female" />
-        <br />
+        <br /> 
+      </div>
         <button type="submit">envoyer</button>
       </form>
     </main>
